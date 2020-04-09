@@ -70,7 +70,41 @@ class Tile {
   }
   
   void setColour() {
-
+        switch(value)
+        {
+            case 2:
+              colour = color(238,238,218);
+            break;
+            case 4:
+              colour = color(237,224,200);
+            break;
+            case 8:
+               colour = color(242,177,121);
+            break;
+            case 16:
+                colour = color(255,149,99);
+            break;
+            case 32:
+                colour = color(245,124,95);
+            break;
+            case 128:
+                colour = color(237,206,113);
+            break;
+            case 256:
+                colour = color(233,201,97);
+            break;
+            case 512:
+                colour = color(236,200,80);
+            break;
+            case 1024:
+                colour = color(235,199,60);
+            break;
+            case 2048:
+                colour = color(237,197,1);
+            break;
+      
+        }
+          
   }
 
   Tile clone() {
