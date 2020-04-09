@@ -45,7 +45,28 @@ void draw() {
 
 
 void keyPressed() {
-
+  if(key == CODED)
+  {
+    switch(keyCode)
+    {
+        case DOWN:
+          p.moveDirection.y = -1;
+          p.moveTiles();
+        break;
+        case UP:
+          p.moveDirection.y = 1;
+          p.moveTiles();        
+        break;
+        case LEFT:
+          p.moveDirection.x = -1;
+          p.moveTiles();
+        break;
+        case RIGHT:
+          p.moveDirection.y = 1;
+          p.moveTiles();
+        break;
+    }
+  }
   if (released) {
   }
 }
